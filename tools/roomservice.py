@@ -216,6 +216,7 @@ def fetch_dependencies(repo_path, fallback_branch = None):
             print('Adding dependencies to manifest')
             add_to_manifest(fetch_list, fallback_branch)
     else:
+        print(dependencies_path)
         print('Dependencies file not found, bailing out.')
 
     if len(syncable_repos) > 0:
